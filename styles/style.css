@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+:root {
+  --themeColor: #1f2937;
+  --textWhite: #f9faf8;
+  --otherWhite: #e5e7eb;
+  --buttonBlue: #3882f6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: var(--themeColor, black);
+  padding: 1em 13em;
+}
+
+#logo {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--textWhite, white);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1.5em;
+}
+
+.subtext {
+  font-size: 18px;
+  color: var(--otherWhite, white);
+  text-decoration: none;
+}
+
+.firstSection {
+  padding: 7rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.firstSection .mainText {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.firstSection figure {
+  flex-shrink: 0;
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.firstSection img {
+  width: 100%;
+}
+
+.firstSection figcaption {
+  position: absolute;
+}
+
+.mainText h1 {
+  color: var(--textWhite, white);
+  font-weight: 900;
+  font-size: 48px;
+}
+
+button {
+  padding: 7px 1rem;
+  width: 120px;
+  background-color: var(--buttonBlue, blue);
+  border-radius: 8px;
+}
+
+.firstSection button {
+  border: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 13em;
+  margin-top: 3em;
+}
+
+main h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--themeColor, black);
+}
+
+.windows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3em 0 6em 0;
+}
+
+.window {
+  text-align: center;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.card {
+  border: 4px solid var(--buttonBlue, blue);
+  border-radius: 20px;
+  width: 160px;
+  height: 160px;
+}
+
+.quoteDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--otherWhite, white);
+  padding: 7em 13em;
+}
+
+.quoteDiv p {
+  align-self: flex-end;
+  font-weight: bolder;
+  font-size: 24px;
+  color: var(--themeColor, black);
+}
+
+.quoteDiv em {
+  font-size: 36px;
+  font-weight: 100;
+  color: var(--themeColor, black);
+}
+
+.callToAction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5em 13em;
+}
+
+.signUp {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--buttonBlue, blue);
+  padding: 3rem;
+  width: 100%;
+  border-radius: 0.625px;
+}
+
+.signUp button {
+  border: 2px solid #fff;
+}
+
+strong {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+footer {
+  background-color: var(--themeColor, black);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
