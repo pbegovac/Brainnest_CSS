@@ -52,7 +52,6 @@ main {
   align-items: center;
 }
 
-
 main .mainText {
   display: flex;
   flex-direction: column;
@@ -133,7 +132,6 @@ main button {
   color: var(--themeColor, black);
   margin-top: 0.6rem;
 }
-
 
 .quoteDiv {
   display: flex;
