@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
-
 :root {
   --themeColor: #1f2937;
   --textWhite: #f9faf8;
-  --otherWhite: #e5e7eb;
+  --quoteGray: #e5e7eb;
   --buttonBlue: #3882f6;
+  --white: #fff;
+  --defaultPadding: 12rem;
+
 }
 
 * {
@@ -15,7 +16,7 @@
 
 header {
   background-color: var(--themeColor, black);
-  padding: 1em 13em;
+  padding: 1rem var(--defaultPadding);
 }
 
 #logo {
@@ -27,37 +28,38 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 
 nav ul {
+  width: 40%;
   list-style-type: none;
   display: flex;
-  gap: 1.5rem;
+  justify-content: space-between;
 }
 
 .subtext {
-  font-size: 18px;
-  color: var(--otherWhite, white);
+  font-size: 1.125rem;
+  color: var(--quoteGray, white);
   text-decoration: none;
+  line-height: 1.3;
 }
 
-.firstSection {
-  padding: 7rem 0;
+main {
+  background-color: var(--themeColor, black);
+  padding: 6rem var(--defaultPadding);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 2rem;
 }
 
-.mainText {
+
+main .mainText {
   display: flex;
   flex-direction: column;
-  gap: 0.625;
 }
 
  figure {
-  flex-shrink: 0;
   width: 50%;
   position: relative;
   display: flex;
@@ -86,16 +88,17 @@ button {
   border-radius: 8px;
 }
 
-.firstSection button {
+main button {
   border: none;
+  margin-top: 0.5rem;
 }
 
-main {
+.secondSection {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 13em;
-  margin-top: 3em;
+  padding: 0 var(--defaultPadding);
+  margin-top: 3rem;
 }
 
  h2 {
@@ -108,44 +111,52 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3em 0 6em 0;
+  padding: 3rem 0 10rem;
 }
 
 .window {
   text-align: center;
-  max-width: 12.5rem;
+  width: 13rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5em;
+  justify-content: center;
 }
 
 .card {
-  border: 4px solid var(--buttonBlue, blue);
-  border-radius: 20px;
+  border: 5px solid var(--buttonBlue, blue);
+  border-radius: 1.25rem;
   width: 10rem;
   height: 10rem;
 }
+
+.window p {
+  color: var(--themeColor, black);
+  margin-top: 0.6rem;
+}
+
 
 .quoteDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--otherWhite, white);
-  padding: 7rem 13em;
+  background-color: var(--quoteGray, gray);
+  padding: 7rem var(--defaultPadding);
 }
 
-.quoteDiv p {
-  align-self: flex-end;
+.quoteDiv .thor {
+  width: 60%;
+  text-align: end;
   font-weight: bolder;
   font-size: 1.5rem;
   color: var(--themeColor, black);
 }
 
- em {
+ .quoteDiv .quote {
   font-size: 2.25rem;
-  font-weight: 100;
+  font-weight: 200;
+  font-style: italic;
   color: var(--themeColor, black);
 }
 
@@ -153,7 +164,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5rem 13em;
+  padding: 5rem var(--defaultPadding);
 }
 
 .signUp {
@@ -163,23 +174,23 @@ main {
   background-color: var(--buttonBlue, blue);
   padding: 3rem;
   width: 100%;
-  border-radius: 0.625px;
+  border-radius: 12px;
 }
 
 .signUp button {
-  border: 2px solid #fff;
+  border: 2px solid var(--white);
 }
 
 strong {
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--white);
 }
 
 footer {
   background-color: var(--themeColor, black);
-  color: #fff;
+  color: var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 }
