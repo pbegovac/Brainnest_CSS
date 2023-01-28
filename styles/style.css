@@ -44,7 +44,7 @@ nav ul {
   line-height: 1.3;
 }
 
-main {
+.mainDiv {
   background-color: var(--themeColor, black);
   padding: 6rem var(--defaultPadding);
   display: flex;
