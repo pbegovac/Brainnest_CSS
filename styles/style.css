@@ -16,6 +16,9 @@
 header {
   background-color: var(--themeColor, black);
   padding: 1rem var(--defaultPadding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #logo {
@@ -25,13 +28,14 @@ header {
 }
 
 nav {
+  width: 40%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
 nav ul {
-  width: 40%;
+ width: 100%;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
