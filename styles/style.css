@@ -44,7 +44,7 @@ nav ul {
   line-height: 1.3;
 }
 
-.mainDiv {
+.mainSection {
   background-color: var(--themeColor, black);
   padding: 6rem var(--defaultPadding);
   display: flex;
@@ -57,22 +57,7 @@ main .mainText {
   flex-direction: column;
 }
 
-figure {
-  width: 50%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-img {
-  width: 100%;
-  height: 100%;
-}
-
-figcaption {
-  position: absolute;
-}
 
 h1 {
   color: var(--textWhite, white);
@@ -122,6 +107,25 @@ h2 {
   align-items: center;
   justify-content: flex-start;
   height: 13rem;
+}
+
+
+figure {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+figcaption {
+text-align: center;
+color: var(--themeColor);
 }
 
 .card {
